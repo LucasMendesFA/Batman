@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://www.koimoi.com/wp-content/new-galleries/2022/03/the-batman-does-have-a-post-credit-scene-heres-how-you-can-watch-it-001.jpg');
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#sinopse {
+    width: 100%;
+    display:inline-flex;
+    justify-content: center;  
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    margin-top: 30px;
+    text-align: center;    
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 180px;
+    background-size: contain;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    }
+
+.banner-1 {
+    background-image: url(./Mídia/PAUL\ DANO.png);
+}
+
+.banner-2 {
+    background-image: url(./Mídia/JEFFREY\ WRIGHT.png);
+}
+
+.banner-3 {
+    background-image: url(./Mídia/ANDY\ SERKIS.png);
+}
+
+.banner-4 {
+    background-image: url(./Mídia/COLIN\ FARRELL.png);
+}
+
+.banner-5 {
+    background-image: url(./Mídia/BARRY\ KEOGHAN.png);
+}
+
+.banner-6 {
+    background-image: url(./Mídia/PETER\ SARSGAARD.png);
+}
+
+.banner-7 {
+    background-image: url(./Mídia/ZOË\ KRAVITZ.png);
+}
+
+.banner-8 {
+    background-image: url(./Mídia/ROBERT\ PATTINSON.png);
+}
+
+.banner-9 {
+    background-image: url(./Mídia/JOHN\ TURTURRO.png);
+}
+
+.banner-10 {
+    background-image: url(./Mídia/Foto1.jpg);
+}
+
+.banner-11 {
+    background-image: url(./Mídia/Foto2.jpg);
+}
+
+.banner-12 {
+    background-image: url(./Mídia/Foto3.jpg);
+}
+
+.banner-13 {
+    background-image: url(./Mídia/Foto4.jpg);
+}
+
+.banner-14 {
+    background-image: url(./Mídia/Foto5.jpg);
+}
+
+.banner-15 {
+    background-image: url(./Mídia/Foto6.jpg);
+}
+
+.banner-16 {
+    background-image: url(./Mídia/Foto8.jpg);
+}
+
+.banner-17 {
+    background-image: url(./Mídia/Foto9.jpg);
+}
+
+.banner-18 {
+    background-image: url(./Mídia/Foto10.jpg);
+}
+
+.flip-container {
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+  }
+
+.flipper{
+	width: 100%;
+	height: 100%;
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+    position: relative;
+    flex-direction: column;
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+        margin-left: 25px;
+    }
+
+    nav {
+        display:none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    .description {
+        width: 100%;  
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+    span {   
+        font-size: 10px;
+        color: #d21617;
+    }
+}
