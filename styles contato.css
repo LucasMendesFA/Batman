@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://blog.videoperola.com.br/wp-content/uploads/2022/02/dc-the-batman-estreia-do-filme-e-no-dia-04-de-marco.jpg');
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#sinopse {
+    width: 100%;
+    display:inline-flex;
+    justify-content: center;  
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    margin-top: 30px;
+    text-align: center;    
+}
+
+#email {
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    margin-left: 400px;
+    width: 500px;
+}
+
+#texto {
+    background-color: black;
+    color: white;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+#enviar {
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    margin-left: 150px;
+    border-color: red;
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+        margin-left: 25px;
+    }
+
+    nav {
+        display:none;
+    }
+
+    span {   
+        font-size: 10px;
+        color: #d21617;
+    }
+    
+    #banner {
+        background-position: 50%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;  
+    }
+
+    #email {
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+        margin-left: 75px;
+        width: 60%;
+    }
+    
+    #texto {
+        background-color: black;
+        color: white;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    #enviar {
+        background-color: black;
+        color: white;
+        margin-top: 5px;
+        margin-left: 170px;
+        border-color: red;
+    }
+   
+}
